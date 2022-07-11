@@ -30,7 +30,7 @@ const Projects = () => {
             link: any;
             id: number;
           }) => (
-            <ListItem>
+            <ListItem key={id}>
               <LinkBox as="article">
                 <VStack
                   alignItems="stretch"
