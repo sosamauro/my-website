@@ -20,10 +20,10 @@ const Hero = () => {
           w="full"
           spacing={3}
         >
-          <Heading size="lg">Hi, I'm Mauro!</Heading>
+          <Heading size="lg">Hi, I’m Mauro!</Heading>
         </Stack>
         <Text as="h2" lineHeight="175%">
-          I'm a Full Stack Developer and advanced student of Information Systems
+          I’m a Full Stack Developer and advanced student of Information Systems
           Engineering based in Argentina 🇦🇷.
         </Text>
         <Socials />
