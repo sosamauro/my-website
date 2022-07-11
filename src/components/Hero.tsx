@@ -1,6 +1,6 @@
 import { Stack, VStack, Heading, Text } from '@chakra-ui/react';
 
-// import SomeImage from '../components/SomeImage';
+import HeroImage from './HeroImage';
 import Socials from './Socials';
 
 const Hero = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
         </Text>
         <Socials />
       </VStack>
-      {/* <SomeImage /> */}
+      <HeroImage />
     </Stack>
   );
 };
