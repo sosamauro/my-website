@@ -15,6 +15,7 @@ import {
 import { projects } from './constants';
 
 const Projects = () => {
+  const bg = useColorModeValue('gray.100', 'gray.700');
   return (
     <VStack as="section" alignItems="flex-start" w="full" spacing={6}>
       <Heading size="md">Some of my projects.</Heading>
@@ -40,7 +41,7 @@ const Projects = () => {
                   direction={{ base: 'column', md: 'row' }}
                   w="full"
                   p={4}
-                  bg={useColorModeValue('gray.100', 'gray.700')}
+                  bg={bg}
                   _hover={{ transform: 'scale(1.025, 1.025)' }}
                   rounded="md"
                   spacing={{ base: 2, md: 3 }}
