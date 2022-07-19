@@ -33,7 +33,7 @@ const HeroImage = () => {
       <MotionBox
         animate={{ y: 20, scale: 0.97 }}
         transition={{ repeat: Infinity, duration: 2, repeatType: 'reverse' }}
-        marginY={8}
+        marginY={{ base: 0, md: 4 }}
         minWidth={[240, 320]}
         marginX="auto"
       >

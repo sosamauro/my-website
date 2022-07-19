@@ -1,4 +1,4 @@
-import { Heading, HStack, Container } from '@chakra-ui/react';
+import { Heading, HStack, Container, Box } from '@chakra-ui/react';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 

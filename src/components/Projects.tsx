@@ -8,6 +8,9 @@ import {
   HStack,
   List,
   ListItem,
+  Box,
+  useColorMode,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { projects } from './constants';
 
@@ -15,7 +18,7 @@ const Projects = () => {
   return (
     <VStack as="section" alignItems="flex-start" w="full" spacing={6}>
       <Heading size="md">Some of my projects.</Heading>
-      <List w="full" spacing={{ base: 8, md: 2 }}>
+      <List w="full" spacing={4}>
         {projects.map(
           ({
             title,
@@ -34,20 +37,15 @@ const Projects = () => {
               <LinkBox as="article">
                 <VStack
                   alignItems="stretch"
+                  direction={{ base: 'column', md: 'row' }}
                   w="full"
-                  p={{ base: 0, md: 4 }}
-                  _hover={{
-                    bg: 'gray.100',
-                    transform: 'scale(1.025, 1.025)',
-                  }}
-                  _dark={{
-                    _hover: {
-                      bg: 'gray.700',
-                    },
-                  }}
+                  p={4}
+                  bg={useColorModeValue('gray.100', 'gray.700')}
+                  _hover={{ transform: 'scale(1.025, 1.025)' }}
                   rounded="md"
+                  spacing={{ base: 2, md: 3 }}
                   transitionDuration="slow"
-                  transitionProperty="all"
+                  transitionProperty="transform"
                   transitionTimingFunction="ease-out"
                 >
                   <VStack alignItems="flex-start">
@@ -61,15 +59,16 @@ const Projects = () => {
                         <Text
                           key={i}
                           color="gray.500"
-                          fontSize="sm"
+                          fontSize={{ base: 'sm', md: 'md' }}
                           textTransform="uppercase"
+                          fontWeight="semibold"
                         >
                           {tag}
                         </Text>
                       ))}
                     </HStack>
                   </VStack>
-                  <Text color="gray.500" fontSize="sm">
+                  <Text color="gray.500" fontSize={{ base: 'sm', md: 'md' }}>
                     {description}
                   </Text>
                 </VStack>

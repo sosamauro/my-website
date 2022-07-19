@@ -4,8 +4,9 @@ const Footer = () => {
   return (
     <Container
       alignItems="center"
-      justifyContent="space-between"
+      justifyContent={{ base: 'center', md: 'flex-start' }}
       display="flex"
+      // flexDir={{base: "center", md: "center"}}
       maxW="container.md"
       px={{ base: 4, lg: 0 }}
       pb={8}

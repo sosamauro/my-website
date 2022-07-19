@@ -20,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
         centerContent
       >
         <VStack alignItems="stretch" flex={1} w="full" spacing={16}>
-          <VStack as="main" flex={1} w="full" spacing={16}>
+          <VStack as="main" flex={1} w="full" spacing={{ base: 12, md: 1 }}>
             {children}
           </VStack>
           <Footer />
