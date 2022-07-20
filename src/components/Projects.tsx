@@ -16,7 +16,7 @@ import { projects } from './constants';
 
 const Projects = () => {
   const bg = useColorModeValue('gray.100', 'gray.700');
-  const textColor = useColorModeValue('gray.500', 'gray.300');
+  const textColor = useColorModeValue('gray.500', 'gray.400');
   return (
     <VStack as="section" alignItems="flex-start" w="full" spacing={6}>
       <Heading size="md">Some of my projects.</Heading>
