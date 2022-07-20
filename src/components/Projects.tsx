@@ -16,6 +16,7 @@ import { projects } from './constants';
 
 const Projects = () => {
   const bg = useColorModeValue('gray.100', 'gray.700');
+  const textColor = useColorModeValue('gray.500', 'gray.300');
   return (
     <VStack as="section" alignItems="flex-start" w="full" spacing={6}>
       <Heading size="md">Some of my projects.</Heading>
@@ -59,7 +60,7 @@ const Projects = () => {
                       {tags.map((tag: string, i: number) => (
                         <Text
                           key={i}
-                          color="gray.500"
+                          color={textColor}
                           fontSize={{ base: 'sm', md: 'md' }}
                           textTransform="uppercase"
                           fontWeight="semibold"
@@ -69,7 +70,7 @@ const Projects = () => {
                       ))}
                     </HStack>
                   </VStack>
-                  <Text color="gray.500" fontSize={{ base: 'sm', md: 'md' }}>
+                  <Text color={textColor} fontSize={{ base: 'sm', md: 'md' }}>
                     {description}
                   </Text>
                 </VStack>
