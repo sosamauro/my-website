@@ -18,7 +18,7 @@ export const projects = [
   {
     title: 'Tip Calculator App',
     description:
-      'It’s a tip calculator where you enter the bill, the percentage of the tip, the number of people, and calculate the corresponding tip amount that is added to the total bill to be paid for each person.',
+      'It’s a tip calculator where you enter the bill, the percentage of the tip, the number of people and it calculates the corresponding tip that is added to the total bill to be paid by each person.',
     tags: ['html', 'css', 'javascript'],
     link: 'https://sosamauro.github.io/tip-calculator-app/',
     id: 2,
